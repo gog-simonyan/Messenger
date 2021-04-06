@@ -3,9 +3,10 @@ USE Messenger;
 
 CREATE TABLE User (
   username varchar(255),
-  status VARCHAR(10) NOT NULL CHECK (status IN('online', 'offline', 'away')),
+  status VARCHAR(10) NOT NULL CHECK (status IN('online', 'offline'
+)),
   PRIMARY KEY (username)
-);
+
 
 CREATE TABLE UserGroup (
   group_name varchar(255),
@@ -35,13 +36,13 @@ CREATE TABLE Belongs (
   FOREIGN KEY (group_name) REFERENCES UserGroup(group_name)
 );
 
-INSERT INTO User VALUES('Hrach', 'online');
-INSERT INTO User VALUES('Hasmik', 'online');
+INSERT INTO User VALUES('Gohar', 'online');
+INSERT INTO User VALUES('Elen', 'online');
 
-INSERT INTO UserGroup VALUES('Family');
+INSERT INTO UserGroup VALUES('Frends');
 
-INSERT INTO Belongs VALUES('Hrach', 'Family');
-INSERT INTO Belongs VALUES('Hasmik', 'Family');
+INSERT INTO Belongs VALUES('Gohar', 'Frends');
+INSERT INTO Belongs VALUES('Elen', 'Frends');
 
-INSERT INTO Message VALUES(1, 'hello', '2021-02-28 00:38:54', 'Hrach', 'Hasmik', NULL);
-INSERT INTO Message VALUES(2, 'hello everyone', '2021-02-28 00:39:54', 'Hrach', NULL, 'Family');
+INSERT INTO Message VALUES(1, 'hi', '2021-01-18 01:35:24', 'Gohar', 'Elen', NULL);
+INSERT INTO Message VALUES(2, 'hello', '2021-01-18 00:36:24', 'Gohat', NULL, 'Frend');
