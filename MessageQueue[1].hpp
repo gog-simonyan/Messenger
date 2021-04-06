@@ -1,9 +1,7 @@
 //
 //  MessageQueue.hpp
 //  MessageHandler
-//
-//  Created by Hrach Ayunts on 29.03.21.
-//
+
 
 #ifndef MessageQueue_hpp
 #define MessageQueue_hpp
