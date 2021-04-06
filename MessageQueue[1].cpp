@@ -1,9 +1,9 @@
 //
 //  MessageQueue.cpp
 //  MessageHandler
-//
-//  Created by Hrach Ayunts on 29.03.21.
-//
+
+
+
 
 #include "MessageQueue.hpp"
 #include <string>
